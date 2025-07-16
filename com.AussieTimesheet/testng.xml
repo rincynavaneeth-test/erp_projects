@@ -7,12 +7,13 @@
     <listener class-name="extentReport.TestListener"/>
 </listeners>
 
-  <test thread-count="5" name="testng">
+  <test thread-count="1" name="testng">
+  <parameter name="browser" value="chrome"/>
     <classes>
-      <!--<class name="testclasses.NewOpportunitiesPageTestClass"/> -->
-       <!-- <class name="testclasses.OpportunitiesPageTestClass"/> -->
-      <!-- <class name="testclasses.CalenderPageTestClass"/> -->
-       <!--<class name="testclasses.DashboardPageTestClass"/>-->
+     <!-- <class name="testclasses.NewOpportunitiesPageTestClass"/> -->
+        <!--<class name="testclasses.OpportunitiesPageTestClass"/>-->
+       <!--<class name="testclasses.CalenderPageTestClass"/>-->
+       <class name="testclasses.DashboardPageTestClass"/>
        <class name="testclasses.LoginPageTestClass"/>
     </classes>
   </test> <!-- testng -->

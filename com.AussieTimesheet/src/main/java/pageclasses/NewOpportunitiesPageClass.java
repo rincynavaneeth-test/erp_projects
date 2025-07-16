@@ -23,36 +23,35 @@ public class NewOpportunitiesPageClass {
 
 	@FindBy(xpath = "//a[@href='https://erp.qabible.in/admin/opportunities/create']")
 	WebElement new_opportunities;
-	
+
 	@FindBy(name = "opportunity_name")
 	WebElement opportunityNameInput;
 
 	@FindBy(xpath = "//button[@type='submit' and text()='Save']")
 	WebElement opportunitySaveButton;
-	
+
 	@FindBy(css = "div.alert.alert-success")
 	WebElement successAlert;
 
-	
 	public void enterOpportunityNameAndSave(String opportunityName) {
-	    wu.waitForElementToBeVisibleByWebElement(driver, opportunityNameInput, 5);
-	    glu.clearAndSendKeys(opportunityNameInput, opportunityName);
+		wu.waitForElementToBeVisibleByWebElement(driver, opportunityNameInput, 5);
+		glu.clearAndSendKeys(opportunityNameInput, opportunityName);
 
-	    wu.waitForElementToBeClickableByWebElement(driver, opportunitySaveButton, 5);
-	    opportunitySaveButton.click();
+		wu.waitForElementToBeClickableByWebElement(driver, opportunitySaveButton, 5);
+		opportunitySaveButton.click();
 	}
-	
+
 	public boolean isSuccessMessageDisplayed() {
-	    wu.waitForElementToBeVisibleByWebElement(driver, successAlert, 5);
-	    return successAlert.isDisplayed();
+		wu.waitForElementToBeVisibleByWebElement(driver, successAlert, 5);
+		return successAlert.isDisplayed();
 	}
 
 	public String getSuccessMessageText() {
-	    return successAlert.getText().trim();
+		return successAlert.getText().trim();
 	}
 
 	public String getPageTitleText() {
 		return glu.getTextOfElement(new_opportunities);
 	}
-	
+
 }

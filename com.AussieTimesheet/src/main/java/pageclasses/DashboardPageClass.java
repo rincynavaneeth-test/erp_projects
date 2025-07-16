@@ -36,7 +36,6 @@ public class DashboardPageClass {
 	WebElement calender;
 	@FindBy(xpath = "//span[text()='Warning']")
 	WebElement warning;
-	
 
 	public String getTextOfDashboard() {
 
@@ -57,7 +56,5 @@ public class DashboardPageClass {
 		glu.clickUsingJavaScriptExecutor(driver, opportunities);
 		return new OpportunitiesPageClass(driver);
 	}
-	
-	
 
 }

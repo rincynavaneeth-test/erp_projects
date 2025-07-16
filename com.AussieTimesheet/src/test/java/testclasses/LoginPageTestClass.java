@@ -16,7 +16,7 @@ public class LoginPageTestClass extends BaseClass {
 	LoginPageClass lp;
 	DashboardPageClass dp;
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"Group 1"})
 	public void verifySuccessfullLogin() throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -24,11 +24,11 @@ public class LoginPageTestClass extends BaseClass {
 		dp = new DashboardPageClass(driver);
 		String actualResult = dp.getTextOfDashboard();
 		System.out.println(actualResult);
-		Assert.assertEquals(actualResult, "testDashboard");
+		Assert.assertEquals(actualResult, "Dashboard");
 
 	}
 
-	@Test(priority = 1, dataProvider = "unsuccessfullLogin", dataProviderClass = DataProviderClass.class)
+	@Test(priority = 1, dataProvider = "unsuccessfullLogin", dataProviderClass = DataProviderClass.class, groups = {"Group 2"})
 	public void verifyUnsuccessfullLogin(String u, String p) throws IOException {
 
 		lp = new LoginPageClass(driver);
@@ -37,5 +37,17 @@ public class LoginPageTestClass extends BaseClass {
 		System.out.println(actualResult);
 		Assert.assertEquals(actualResult, "username or password information doesn't exist!");
 	}
+	
+	@Test(priority = 3)
+	public void verifyRememberMeCheckboxFunctionality() {
 
+	    lp = new LoginPageClass(driver);
+	    lp.clickOnRememberMeCheckbox();
+	    boolean isDisplayed = lp.isRememberMeCheckboxSelected();
+	    Assert.assertTrue(isDisplayed, "Remember Me checkbox is not visible");
+	    System.out.println("Display status: " + (isDisplayed ? "Displayed" : "Not Displayed"));
+
+
+
+}
 }

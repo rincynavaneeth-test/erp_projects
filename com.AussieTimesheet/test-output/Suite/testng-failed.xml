@@ -6,16 +6,16 @@
     <listener class-name="extentReport.TestListener"/>
   </listeners>
   <test thread-count="5" name="testng(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testclasses.CalenderPageTestClass">
+      <class name="testclasses.LoginPageTestClass">
         <methods>
-          <include name="verifyHolidayModalOpenAndClose"/>
           <include name="afterMethod"/>
-          <include name="verifySettingsModalIsDisplayed"/>
           <include name="createReport"/>
           <include name="beforeMethod"/>
+          <include name="verifyRememberMeCheckboxFunctionality"/>
         </methods>
-      </class> <!-- testclasses.CalenderPageTestClass -->
+      </class> <!-- testclasses.LoginPageTestClass -->
     </classes>
   </test> <!-- testng(failed) -->
 </suite> <!-- Failed suite [Suite] -->

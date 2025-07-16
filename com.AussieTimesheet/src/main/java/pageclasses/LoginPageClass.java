@@ -33,6 +33,9 @@ public class LoginPageClass {
 	WebElement login;
 	@FindBy(xpath = "//div[@class='alert alert-danger']")
 	WebElement invalid;
+	@FindBy(name = "remember")
+	WebElement rememberMeCheckbox;
+
 
 	// action method
 	public DashboardPageClass login(String uname, String pass) {
@@ -47,4 +50,16 @@ public class LoginPageClass {
 		wu.waitForElementToBeVisibleByWebElement(driver, invalid, 3);
 		return glu.getTextOfElement(invalid);
 	}
+	
+	public void clickOnRememberMeCheckbox() {
+	    if (!glu.isElementSelected(rememberMeCheckbox)) {
+	        glu.clickUsingJavaScriptExecutor(driver, rememberMeCheckbox);
+	    }
+	}
+
+	public boolean isRememberMeCheckboxSelected() {
+	    return glu.isElementSelected(rememberMeCheckbox);
+	}
+
+
 }

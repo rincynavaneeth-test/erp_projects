@@ -19,7 +19,7 @@ public class DashboardPageTestClass extends BaseClass {
 	LoginPageClass lp;
 	Actions act;
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups = {"Group 1"})
 	public void verifyLogoIsDisplayedAfterLogin() throws IOException {
 		lp = new LoginPageClass(driver);
 		dp = lp.login(ExcelReadUtility.getStringData(3, 0, "LoginPage"),
