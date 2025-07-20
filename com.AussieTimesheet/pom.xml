@@ -8,6 +8,7 @@
 
 	<dependencies>
 
+
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
@@ -63,7 +64,9 @@
 					<target>17</target>
 				</configuration>
 			</plugin>
-			<!-- Surefire Plugin for TestNG Execution -->
+			<!-- Surefire Plugin for TestNG Execution.. -->
+			<!-- temp comment -->
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
