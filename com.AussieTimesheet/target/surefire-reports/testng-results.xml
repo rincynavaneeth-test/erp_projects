@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-17T13:44:36 IST" name="Suite" finished-at="2025-07-17T13:44:49 IST" duration-ms="13017">
+    <groups>
+      <group name="Group 1">
+        <method signature="LoginPageTestClass.verifySuccessfullLogin()[pri:2, instance:testclasses.LoginPageTestClass@1d2adfbe]" name="verifySuccessfullLogin" class="testclasses.LoginPageTestClass"/>
+        <method signature="DashboardPageTestClass.verifyLogoIsDisplayedAfterLogin()[pri:3, instance:testclasses.DashboardPageTestClass@4466af20]" name="verifyLogoIsDisplayedAfterLogin" class="testclasses.DashboardPageTestClass"/>
+      </group> <!-- Group 1 -->
+    </groups>
+    <test started-at="2025-07-17T13:44:36 IST" name="Test" finished-at="2025-07-17T13:44:49 IST" duration-ms="13017">
+      <class name="testclasses.LoginPageTestClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.LoginPageTestClass@1d2adfbe]" started-at="2025-07-17T13:44:44 IST" name="beforeMethod" finished-at="2025-07-17T13:44:45 IST" duration-ms="1953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfullLogin()[pri:2, instance:testclasses.LoginPageTestClass@1d2adfbe]" started-at="2025-07-17T13:44:45 IST" name="verifySuccessfullLogin" finished-at="2025-07-17T13:44:49 IST" duration-ms="3730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfullLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.LoginPageTestClass@1d2adfbe]" started-at="2025-07-17T13:44:49 IST" name="afterMethod" finished-at="2025-07-17T13:44:49 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testclasses.LoginPageTestClass -->
+      <class name="testclasses.DashboardPageTestClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testclasses.DashboardPageTestClass@4466af20]" started-at="2025-07-17T13:44:36 IST" name="beforeMethod" finished-at="2025-07-17T13:44:38 IST" duration-ms="1822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLogoIsDisplayedAfterLogin()[pri:3, instance:testclasses.DashboardPageTestClass@4466af20]" started-at="2025-07-17T13:44:38 IST" name="verifyLogoIsDisplayedAfterLogin" finished-at="2025-07-17T13:44:43 IST" duration-ms="5061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoIsDisplayedAfterLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testclasses.DashboardPageTestClass@4466af20]" started-at="2025-07-17T13:44:43 IST" name="afterMethod" finished-at="2025-07-17T13:44:44 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testclasses.DashboardPageTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

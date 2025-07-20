@@ -12,17 +12,7 @@
     </classes>
   </test> <!-- Test -->
   
-   <test name="Test">
-   <parameter name="browser" value="edge"/>
-
-    <classes>
-      <!-- <class name="testclasses.OpportunitiesPageTestClass"/>-->
-      <!-- <class name="testclasses.CalenderPageTestClass"/>-->
-       <!--<class name="testclasses.DashboardPageTestClass"/>-->
-      <class name="testclasses.LoginPageTestClass"/>
-    </classes>
-  </test> <!-- Test -->
-  
+   
   <test name="Test">
    <parameter name="browser" value="edge"/>
 
